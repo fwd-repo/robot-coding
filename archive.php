@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-	<main>
 		<a href="<?php echo site_url('/blog'); ?>">
 			<h2 class="page-heading"><?php the_archive_title(); ?></h2>
 		</a>

@@ -72,3 +72,7 @@
 	<div id="searchbox">
 		<input type="text" placeholder="Search Here">
 	</div>
+
+	<?php if(!is_front_page()) { ?>
+		<main>
+	<?php } ?>
