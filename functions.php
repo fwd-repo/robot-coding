@@ -46,3 +46,28 @@ function robot_custom_post_type() {
 }
 
 add_action('init', 'robot_custom_post_type');
+
+// Sidebar
+
+function robot_widgets() {
+	register_sidebar(
+		array(
+			'name' => 'Main Sidebar',
+			'id' => 'main_sidebar',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+}
+
+add_action('widgets_init', 'robot_widgets');
+
+// Filters
+
+function search_filter($query) {
+	if($query->is_search()){
+		$query->set('post_type', array('post', 'project'));
+	}
+}
+
+add_filter('pre_get_posts', 'search_filter');

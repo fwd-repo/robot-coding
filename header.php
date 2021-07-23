@@ -30,18 +30,14 @@
 					<?php if(is_page('about')) echo 'class="active"' ?>
 				About</a>
 			</li>
-			<li>
-				<input type="text" placeholder="Search Here">
-				<br>
-				<a href="#">
-					<i class="fas fa-search"></i>
-				</a>
-			</li>
+			<div class="searchbox-slide-menu">
+				<?php get_search_form(); ?>
+			</div>
 		</ul>
 	</div>
 	<nav>
 		<div id="logo-img">
-			<a href="#">
+			<a href="<?php echo site_url(''); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-robot.png" alt="Robot Coding Logo">
 			</a>
 		</div>
@@ -70,7 +66,7 @@
 	</nav>
 
 	<div id="searchbox">
-		<input type="text" placeholder="Search Here">
+		<?php get_search_form(); ?>
 	</div>
 
 	<?php if(!is_front_page()) { ?>
