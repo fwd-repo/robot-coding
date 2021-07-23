@@ -527,6 +527,21 @@ footer #social-media-footer ul li:hover a .fa-github {
 	color: red;
 }
 
+/* Contact Form */
+
+.wpcf7 input,
+.wpcf7 textarea {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 0 16px;
+	height: 42px;
+}
+
+.wpcf7 textarea {
+	height: 100px;
+}
+
 /* Media Queries */
 
 @media (max-width: 900px) {
