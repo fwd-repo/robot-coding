@@ -542,6 +542,19 @@ footer #social-media-footer ul li:hover a .fa-github {
 	height: 100px;
 }
 
+/* 404 */
+
+.container-404 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+}
+
+.container-404 img {
+	width: 480px;
+}
+
 /* Media Queries */
 
 @media (max-width: 900px) {
